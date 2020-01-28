@@ -383,12 +383,19 @@
 			.helpText {
 				color: white;
 				text-align: center;
+				font-family: Arial;
+				font-size: x-large;
+			}
+			
+			.cardSelect {
+				font-family: Arial;
+				font-size: x-large;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="options">
-			<select onchange="cardBackChange(this)">
+			<select class="cardSelect" onchange="cardBackChange(this)">
 				<option value="BicycleRiderBackBlue.png">Bicycle Rider Back (Blue)</option>
 				<option value="BicycleSkulls.png" selected>Bicycle Skull</option>
 				<option value="BrokenBorders2018.png">Broken Borders (2018)</option>
