@@ -1,5 +1,15 @@
 <html>
 	<head>
+		<script>
+			function cardBackChange(selectedCardBack) {
+				var cards = document.getElementsByClassName("card");
+				
+				for (i=0; i < cards.length; i++) {
+					cards[i].style.backgroundImage = "url(" + selectedCardBack.value + ")";
+				}
+			}
+		</script>
+	
 		<style>
 			body {
 			  background: #21262d;
@@ -338,9 +348,30 @@
 			  background-image: url('BicycleSkulls.png');
 			  transition: transform 1s ease-out;
 			}
+			
+			.options {
+				margin-left: 20px;
+				margin-top: 20px;
+				display: inline-block;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="options">
+			<select onchange="cardBackChange(this)">
+				<option value="BicycleRiderBackBlue.png">Bicycle Rider Back (Blue)</option>
+				<option value="BicycleSkulls.png" selected>Bicycle Skull</option>
+				<option value="BrokenBorders2018.png">Broken Borders (2018)</option>
+				<option value="CherryCasinoRed.png">Cherry Casino (Red)</option>
+				<option value="KubikV1.png">Kubik (V1)</option>
+				<option value="MonarchsBlue.png">Monarchs (Blue)</option>
+				<option value="OrbitV2.png">Orbit (V2)</option>
+				<option value="SleepyHollow.png">Sleepy Hollow</option>
+				<option value="TallyHoCircleBackRed.png">Tally-Ho Circle Back (Red)</option>
+				<option value="VirtuosoSpring2015.png">Virtuoso (Spring/Summer 2015)</option>
+			</select>			
+		</div>
+	
 		<div class="cards">
 		  <div class="card"></div>
 		  <div class="card"></div>
