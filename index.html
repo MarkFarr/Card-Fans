@@ -8,6 +8,28 @@
 					cards[i].style.backgroundImage = "url(" + selectedCardBack.value + ")";
 				}
 			}
+			
+			function cardsMouseDown() {
+				document.getElementById("cards").classList.add("cardsActive");
+				console.log("Cards mouse down.");
+			}
+			
+			function cardsMouseUp() {
+				document.getElementById("cards").classList.remove("cardsActive");
+				console.log("Cards mouse up.");
+			}
+			
+			function cardsTouched(event) {
+				event.preventDefault();
+				document.getElementById("cards").classList.add("cardsActive");
+				console.log("Cards touched.");
+			}
+			
+			function cardsTouchedEnd(event) {
+				event.preventDefault();
+				document.getElementById("cards").classList.remove("cardsActive");
+				console.log("Cards touched end.");
+			}
 		</script>
 	
 		<style>
@@ -21,7 +43,9 @@
 			  margin-right: auto;
 			  height: 600px;
 			  width: 600px;
-			  role: button;					
+			  role: button;
+			}
+			.cardsActive {
 			}
 			.cards div:nth-child(1) {
 			  transform: translate(-50%, -50%) rotate(-129.9056603774deg);
@@ -179,160 +203,160 @@
 			.cards div:nth-child(52) {
 			  transform: translate(-50%, -50%) rotate(129.9056603774deg);
 			}
-			.cards:active div:nth-child(1) {
+			.cardsActive div:nth-child(1) {
 			  transform: translate(-50%, -50%) rotate(-173.2075471698deg);
 			}
-			.cards:active div:nth-child(2) {
+			.cardsActive div:nth-child(2) {
 			  transform: translate(-50%, -50%) rotate(-166.4150943396deg);
 			}
-			.cards:active div:nth-child(3) {
+			.cardsActive div:nth-child(3) {
 			  transform: translate(-50%, -50%) rotate(-159.6226415094deg);
 			}
-			.cards:active div:nth-child(4) {
+			.cardsActive div:nth-child(4) {
 			  transform: translate(-50%, -50%) rotate(-152.8301886792deg);
 			}
-			.cards:active div:nth-child(5) {
+			.cardsActive div:nth-child(5) {
 			  transform: translate(-50%, -50%) rotate(-146.0377358491deg);
 			}
-			.cards:active div:nth-child(6) {
+			.cardsActive div:nth-child(6) {
 			  transform: translate(-50%, -50%) rotate(-139.2452830189deg);
 			}
-			.cards:active div:nth-child(7) {
+			.cardsActive div:nth-child(7) {
 			  transform: translate(-50%, -50%) rotate(-132.4528301887deg);
 			}
-			.cards:active div:nth-child(8) {
+			.cardsActive div:nth-child(8) {
 			  transform: translate(-50%, -50%) rotate(-125.6603773585deg);
 			}
-			.cards:active div:nth-child(9) {
+			.cardsActive div:nth-child(9) {
 			  transform: translate(-50%, -50%) rotate(-118.8679245283deg);
 			}
-			.cards:active div:nth-child(10) {
+			.cardsActive div:nth-child(10) {
 			  transform: translate(-50%, -50%) rotate(-112.0754716981deg);
 			}
-			.cards:active div:nth-child(11) {
+			.cardsActive div:nth-child(11) {
 			  transform: translate(-50%, -50%) rotate(-105.2830188679deg);
 			}
-			.cards:active div:nth-child(12) {
+			.cardsActive div:nth-child(12) {
 			  transform: translate(-50%, -50%) rotate(-98.4905660377deg);
 			}
-			.cards:active div:nth-child(13) {
+			.cardsActive div:nth-child(13) {
 			  transform: translate(-50%, -50%) rotate(-91.6981132075deg);
 			}
-			.cards:active div:nth-child(14) {
+			.cardsActive div:nth-child(14) {
 			  transform: translate(-50%, -50%) rotate(-84.9056603774deg);
 			}
-			.cards:active div:nth-child(15) {
+			.cardsActive div:nth-child(15) {
 			  transform: translate(-50%, -50%) rotate(-78.1132075472deg);
 			}
-			.cards:active div:nth-child(16) {
+			.cardsActive div:nth-child(16) {
 			  transform: translate(-50%, -50%) rotate(-71.320754717deg);
 			}
-			.cards:active div:nth-child(17) {
+			.cardsActive div:nth-child(17) {
 			  transform: translate(-50%, -50%) rotate(-64.5283018868deg);
 			}
-			.cards:active div:nth-child(18) {
+			.cardsActive div:nth-child(18) {
 			  transform: translate(-50%, -50%) rotate(-57.7358490566deg);
 			}
-			.cards:active div:nth-child(19) {
+			.cardsActive div:nth-child(19) {
 			  transform: translate(-50%, -50%) rotate(-50.9433962264deg);
 			}
-			.cards:active div:nth-child(20) {
+			.cardsActive div:nth-child(20) {
 			  transform: translate(-50%, -50%) rotate(-44.1509433962deg);
 			}
-			.cards:active div:nth-child(21) {
+			.cardsActive div:nth-child(21) {
 			  transform: translate(-50%, -50%) rotate(-37.358490566deg);
 			}
-			.cards:active div:nth-child(22) {
+			.cardsActive div:nth-child(22) {
 			  transform: translate(-50%, -50%) rotate(-30.5660377358deg);
 			}
-			.cards:active div:nth-child(23) {
+			.cardsActive div:nth-child(23) {
 			  transform: translate(-50%, -50%) rotate(-23.7735849057deg);
 			}
-			.cards:active div:nth-child(24) {
+			.cardsActive div:nth-child(24) {
 			  transform: translate(-50%, -50%) rotate(-16.9811320755deg);
 			}
-			.cards:active div:nth-child(25) {
+			.cardsActive div:nth-child(25) {
 			  transform: translate(-50%, -50%) rotate(-10.1886792453deg);
 			}
-			.cards:active div:nth-child(26) {
+			.cardsActive div:nth-child(26) {
 			  transform: translate(-50%, -50%) rotate(-3.3962264151deg);
 			}
-			.cards:active div:nth-child(27) {
+			.cardsActive div:nth-child(27) {
 			  transform: translate(-50%, -50%) rotate(3.3962264151deg);
 			}
-			.cards:active div:nth-child(28) {
+			.cardsActive div:nth-child(28) {
 			  transform: translate(-50%, -50%) rotate(10.1886792453deg);
 			}
-			.cards:active div:nth-child(29) {
+			.cardsActive div:nth-child(29) {
 			  transform: translate(-50%, -50%) rotate(16.9811320755deg);
 			}
-			.cards:active div:nth-child(30) {
+			.cardsActive div:nth-child(30) {
 			  transform: translate(-50%, -50%) rotate(23.7735849057deg);
 			}
-			.cards:active div:nth-child(31) {
+			.cardsActive div:nth-child(31) {
 			  transform: translate(-50%, -50%) rotate(30.5660377358deg);
 			}
-			.cards:active div:nth-child(32) {
+			.cardsActive div:nth-child(32) {
 			  transform: translate(-50%, -50%) rotate(37.358490566deg);
 			}
-			.cards:active div:nth-child(33) {
+			.cardsActive div:nth-child(33) {
 			  transform: translate(-50%, -50%) rotate(44.1509433962deg);
 			}
-			.cards:active div:nth-child(34) {
+			.cardsActive div:nth-child(34) {
 			  transform: translate(-50%, -50%) rotate(50.9433962264deg);
 			}
-			.cards:active div:nth-child(35) {
+			.cardsActive div:nth-child(35) {
 			  transform: translate(-50%, -50%) rotate(57.7358490566deg);
 			}
-			.cards:active div:nth-child(36) {
+			.cardsActive div:nth-child(36) {
 			  transform: translate(-50%, -50%) rotate(64.5283018868deg);
 			}
-			.cards:active div:nth-child(37) {
+			.cardsActive div:nth-child(37) {
 			  transform: translate(-50%, -50%) rotate(71.320754717deg);
 			}
-			.cards:active div:nth-child(38) {
+			.cardsActive div:nth-child(38) {
 			  transform: translate(-50%, -50%) rotate(78.1132075472deg);
 			}
-			.cards:active div:nth-child(39) {
+			.cardsActive div:nth-child(39) {
 			  transform: translate(-50%, -50%) rotate(84.9056603774deg);
 			}
-			.cards:active div:nth-child(40) {
+			.cardsActive div:nth-child(40) {
 			  transform: translate(-50%, -50%) rotate(91.6981132075deg);
 			}
-			.cards:active div:nth-child(41) {
+			.cardsActive div:nth-child(41) {
 			  transform: translate(-50%, -50%) rotate(98.4905660377deg);
 			}
-			.cards:active div:nth-child(42) {
+			.cardsActive div:nth-child(42) {
 			  transform: translate(-50%, -50%) rotate(105.2830188679deg);
 			}
-			.cards:active div:nth-child(43) {
+			.cardsActive div:nth-child(43) {
 			  transform: translate(-50%, -50%) rotate(112.0754716981deg);
 			}
-			.cards:active div:nth-child(44) {
+			.cardsActive div:nth-child(44) {
 			  transform: translate(-50%, -50%) rotate(118.8679245283deg);
 			}
-			.cards:active div:nth-child(45) {
+			.cardsActive div:nth-child(45) {
 			  transform: translate(-50%, -50%) rotate(125.6603773585deg);
 			}
-			.cards:active div:nth-child(46) {
+			.cardsActive div:nth-child(46) {
 			  transform: translate(-50%, -50%) rotate(132.4528301887deg);
 			}
-			.cards:active div:nth-child(47) {
+			.cardsActive div:nth-child(47) {
 			  transform: translate(-50%, -50%) rotate(139.2452830189deg);
 			}
-			.cards:active div:nth-child(48) {
+			.cardsActive div:nth-child(48) {
 			  transform: translate(-50%, -50%) rotate(146.0377358491deg);
 			}
-			.cards:active div:nth-child(49) {
+			.cardsActive div:nth-child(49) {
 			  transform: translate(-50%, -50%) rotate(152.8301886792deg);
 			}
-			.cards:active div:nth-child(50) {
+			.cardsActive div:nth-child(50) {
 			  transform: translate(-50%, -50%) rotate(159.6226415094deg);
 			}
-			.cards:active div:nth-child(51) {
+			.cardsActive div:nth-child(51) {
 			  transform: translate(-50%, -50%) rotate(166.4150943396deg);
 			}
-			.cards:active div:nth-child(52) {
+			.cardsActive div:nth-child(52) {
 			  transform: translate(-50%, -50%) rotate(173.2075471698deg);
 			}
 
@@ -345,7 +369,7 @@
 			  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 			  left: 50%;
 			  top: 30%;
-			  transform-origin: center 96%;
+			  transform-origin: center 94%;
 			  background-image: url('BicycleSkulls.png');
 			  transition: transform 1s ease-out;
 			}
@@ -372,10 +396,10 @@
 				<option value="SleepyHollow.png">Sleepy Hollow</option>
 				<option value="TallyHoCircleBackRed.png">Tally-Ho Circle Back (Red)</option>
 				<option value="VirtuosoSpring2015.png">Virtuoso (Spring/Summer 2015)</option>
-			</select>			
+			</select>		
 		</div>
 	
-		<div class="cards">
+		<div id="cards" class="cards" onmousedown="cardsMouseDown()" onmouseup="cardsMouseUp()" ontouchstart="cardsTouched(event)" ontouchend="cardsTouchedEnd(event)">
 		  <div class="card"></div>
 		  <div class="card"></div>
 		  <div class="card"></div>
