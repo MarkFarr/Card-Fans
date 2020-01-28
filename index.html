@@ -379,6 +379,11 @@
 				margin-top: 20px;
 				display: inline-block;
 			}
+			
+			.helpText {
+				color: white;
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -398,6 +403,8 @@
 				<option value="VirtuosoSpring2015.png">Virtuoso (Spring/Summer 2015)</option>
 			</select>		
 		</div>
+		
+		<p class="helpText">Hold/click on the card fan to increase it to 360°</p>
 	
 		<div id="cards" class="cards" onmousedown="cardsMouseDown()" onmouseup="cardsMouseUp()" ontouchstart="cardsTouched(event)" ontouchend="cardsTouchedEnd(event)">
 		  <div class="card"></div>
